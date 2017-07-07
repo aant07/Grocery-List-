@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<select id="bgchoice" onchange="changeBG()">
+    <option></option>
+    <option value="red">Red</option>
+    <option value="ivory">Ivory</option>
+    <option value="pink">Pink</option>
+</select>
+  <style>
+   body {
+     background-image: url("http://7bna.net/images/fun-pictures/fun-pictures-11.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+ </style>
   <meta charset="UTF-8">
   <title>Grocery List</title>
 
@@ -8,12 +21,19 @@
 </head>
 <body>
 <h1>GL</h1>
-
+ <img src ="http://www.qygjxz.com/fun-pictures/4429358.html">
+   <img src ="http://7bna.net/images/fun-pictures/fun-pictures-11.jpg">
+ </p>
 <div class="form">
 <label for="item">Add item to list: </label><input type="text" id="item">
 <button id="submit">Submit item</button>
 <button id="clear">Clear items</button>
 </div>
+<script>
+function myFunction() {
+    document.body.style.background = "#f3f3f3 url('img_tree.png') no-repeat right top";
+}
+</script>
 
 <ul id="list">
   <li>milk</li>
